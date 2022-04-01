@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMONEMIAR's PORTFOLIO</title>
+    <link rel="shortcut icon" type="img/svg" href="img/favicon.svg"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+        <div class="logo"><a href="index.html"><img src="img/favicon.svg" alt="logo"></a></div>        
+        <div class="burgerButton">
+          <div class="streg1"></div>
+          <div class="streg2"></div>
+          <div class="streg3"></div>
+        </div>
+
+        <div class="navbarLinks">
+            <ul>
+
+            <li><div class="bla"><a href="index.html">HOME</a></div></li>
+
+            <li><div class="hvid"><a href="projects.html">PROJECTS</a></div></li>
+
+            <li><div class="hvid"><a href="contact.html">CONTACT</a></div></li>
+        </ul>
+     
+        </div>
+      
+      </nav>
+    </header>
+ 
+
+    <script src="burger.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+<style>
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    text-decoration: none;
+    list-style: none;
+  }
+
+/**************  1.VARIABEL ****************/
+:root {
+    --blue: blue;
+    --white: #F3F2EE;
+}
+
+/* INDEX.HTML */
+header {
+    top: 0;
+    left: 0;
+}
+
+header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 25px 10px;
+}
+  
+/* .logo{
+
+} */
+
+/* BURGER MENU */
+
+.burgerButton {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1.8rem;
+    height: 1.8rem;
+    cursor: pointer;
+    z-index: 100;
+}   
+  
+.streg1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-0.5rem);
+  
+    width: 100%;
+    height: 3px;
+    background-color: var(--blue);
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+.streg1.aktiv {
+    transform: translateY(0) rotate(-45deg);
+}
+  
+.streg2 {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 3px;
+    background-color: var(--blue);
+    border-radius: 10px;
+    transition: transform 1s;
+}
+  
+.streg2.aktiv {
+    opacity: 0;
+}
+  
+.streg3 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(0.5rem);
+    width: 100%;
+    height: 3px;
+    background-color: var(--blue);
+    border-radius: 10px;
+    transition: transform 1s;
+}
+  .streg3.aktiv {
+    transform: translateY(0) rotate(45deg);
+}
+
+
+/************** 5.NAVBAR ****************/
+navbar ul li img {
+    visibility: hidden;
+    width: 0%;
+  }
+  
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100vw;
+    background-color: var(--white);
+    height: auto;
+}
+
+  
+.navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    flex-direction: column;
+  
+}
+  
+.navbar .navbarLinks {
+    position: fixed;
+    top: 48.5px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+  
+.navbar .navbarLinks.aktiv {
+    display: block;
+    background-color: var(--blue);
+}
+  
+.navbar .navbarLinks li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 5rem;
+}
+  
+.navbar .navbarLinks li a {
+    text-decoration: none;
+    color: var(--white);
+    font-family: "Tinos", serif;
+    font-size: 1.5em;
+}
+  
+.navbar .navbarLinks li a:hover {
+    color:rgba(0, 0, 255, 0.486);
+}
+  
+.bla{
+    padding: 1.5rem;
+}
+  
+.hvid{
+    padding: 1.5rem;
+}
+
+
+/* PROJECT SITE */
+.process_container {
+    display: grid;
+}
+.process_text {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 0.3rem;
+}
+h3 {
+    writing-mode: vertical-lr;
+    /* transform: rotate(90deg); */
+    font-variant-numeric: tabular-nums;
+    }
+    .process_text::after {
+    content: "";
+    width: 2px;
+    background: blue;
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: center;
+    margin: 1rem;
+}
+p {
+grid-row: 2;
+grid-column: 2;
+}
+@media (min-width: 500px) {
+.process_container  {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+h2,
+hr {
+    grid-column: 1/-1;
+}
+}
+
+@media screen and (max-width: 800px) {
+    /************** DESKTOP ****************/
+    .navbarLinks {
+        width: 60%;
+    }
+    .navbar {
+    position: static;
+    top: 0;
+    left: 0;
+    }
+  
+    .navbar ul {
+      flex-direction: row;
+      height: 38vh;
+    }
+  
+    .burgerButton {
+      display: none;
+    }
+  
+    img {
+    width: 100%;
+    padding: 0px 20px;
+    }
+  
+    h1{
+    font-size: 6em;
+    }
+  
+    .navbar .navbarLinks {
+      position: static;
+      width: 100vw;
+      height: auto;
+      display: block;
+    }
+}
+</style>
+
