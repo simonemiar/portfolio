@@ -1,6 +1,5 @@
 "use strict";
 
-
 document.addEventListener('DOMContentLoaded', nav)
 function nav(){
     const burger = document.querySelector('.burger');
