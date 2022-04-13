@@ -1,0 +1,5 @@
+@use "../base/color";
+
+body{
+    background-color: color.$header-color;
+}
