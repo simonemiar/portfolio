@@ -5,4 +5,166 @@
     width: 3rem;
 }
 
+/**************  4.BURGER MENU ****************/
 
+.burgerButton {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1.8rem;
+    height: 1.8rem;
+    cursor: pointer;
+    z-index: 100;
+  }
+  
+  .streg1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-0.5rem);
+    width: 100%;
+    height: 3px;
+    border-radius: 10px;
+    transition: transform 0.5s;
+    background-color: blue;
+  }
+  .streg1.aktiv {
+    transform: translateY(0) rotate(-45deg);
+  }
+  
+  .streg2 {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 3px;
+    border-radius: 10px;
+    transition: transform 0.5s;
+    background-color: blue;
+  }
+  
+  .streg2.aktiv {
+    opacity: 0;
+  }
+  
+  .streg3 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(0.5rem);
+    width: 100%;
+    height: 3px;
+    border-radius: 10px;
+    transition: transform 0.5s;
+    background-color: blue;
+  }
+  .streg3.aktiv {
+    transform: translateY(0) rotate(45deg);
+  }
+  /************** BURGER MENU ****************/
+  /************** 5.NAVBAR ****************/
+  
+  navbar ul li img {
+    visibility: hidden;
+    width: 0%;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100vw;
+    background-color: var(--white);
+    height: auto;
+  }
+  
+  .navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    flex-direction: column;
+  
+  }
+  
+  .navbar .navbarLinks {
+    position: fixed;
+    top: 47px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+  }
+  
+  .navbar .navbarLinks.aktiv {
+    display: block;
+    background-color: var(--blue);
+  }
+  
+  .navbar .navbarLinks li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 5rem;
+  }
+  
+  .navbar .navbarLinks li a {
+    text-decoration: none;
+    color: var(--white);
+    font-family: "Tinos", serif;
+    font-size: 1.5em;
+  }
+  
+  .navbar .navbarLinks li a:hover {
+    color:rgba(0, 0, 255, 0.486);
+  }
+  
+  .bla{
+    padding: 1.5rem;
+  }
+  
+  .hvid{
+    padding: 1.5rem;
+  }
+  
+  /************** NAVBAR END ****************/
+  @media (min-width: 768px) {
+    /************** DESKTOP ****************/
+    .navbar{
+      position: static;
+    }
+    
+    .navbar ul {
+      flex-direction: row;
+      height: 38vh;
+    }
+  
+    .burgerButton {
+      display: none;
+    }
+  
+    h1{
+    font-size: 6em;
+    }
+  
+    .navbar .navbarLinks {
+      position: static;
+      width: 100vw;
+      height: auto;
+      display: block;
+    }
+  
+  
+    .navbar .navbarLinks li a {
+    text-decoration: none;
+    text-orientation: mixed;
+    /* padding: 2rem; */
+    display: flex;
+    justify-content: center;
+    }
+
+    .navbar .navbarLinks.aktiv {
+    text-decoration: none;
+    }
+  }
