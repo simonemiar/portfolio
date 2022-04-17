@@ -23,13 +23,3 @@ function open() {
   streg3.classList.toggle("aktiv");
   navbarLinks.classList.toggle("aktiv");
 }
-
-
-// document.addEventListener('DOMContentLoaded', nav)
-// function nav(){
-//     const burger = document.querySelector('.burger');
-//     const nav = document.querySelector('.main-nav');
-//     burger.addEventListener('click', ()=>{
-//         nav.classList.toggle('show')
-//     })
-// }
