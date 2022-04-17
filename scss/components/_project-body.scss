@@ -26,7 +26,6 @@
 
 
 
-
 .second_section {
   margin: 15px;
 
@@ -41,13 +40,18 @@
     display: grid;
     margin: 15px;
 
+    hr {
+      margin: 10px 0px;
+    }
+
     .process_text {
         display: grid;
         grid-template-columns: auto 1fr;
         grid-template-rows: auto 1fr;
         gap: 0.3rem;
+        margin-top: 2rem;
       }
-      h3 {
+      h4 {
         /* writing-mode: vertical-lr; */
         transform: rotate(90deg);
         font-variant-numeric: tabular-nums;
