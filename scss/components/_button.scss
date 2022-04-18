@@ -2,7 +2,7 @@
 
 /* From uiverse.io by @DGtalsam */
 .custom-btn {
-    width: 250px;
+    width: 200px;
     height: 40px;
     color: #fff;
     padding: 10px 25px;
@@ -88,4 +88,9 @@
    
    .btn span:hover:after {
     width: 100%;
+   }
+
+   .btn:visited {
+    color:color.$blue;
+    background: transparent;
    }
