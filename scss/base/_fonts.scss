@@ -4,6 +4,9 @@ h1{
     color: color.$blue;
     font-size: calc(1rem + (32 - 2.5) * ((100vw - 300px) / (1600 - 300)));
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
 }
 
 h2 {

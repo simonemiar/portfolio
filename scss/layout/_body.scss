@@ -18,8 +18,12 @@ hr{
 
 .index_text{
     display: grid;
-    justify-content: center;
+    justify-items: center;
 
+    .custom-btn {
+        btn{
+            width: 50%;
 
-    
+        }
+    }
 }
