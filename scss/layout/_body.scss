@@ -14,6 +14,7 @@ hr{
 // needs to be removed!
 #spacer {
     margin-top: 5rem;
+    max-width: 1200px;
 }
 
 .index_text{
@@ -26,4 +27,15 @@ hr{
 
         }
     }
+}
+
+.github-corner{
+    visibility: hidden;
+}
+
+@media (min-width: 768px) {
+    .github-corner{
+        visibility: visible;
+    }
+
 }

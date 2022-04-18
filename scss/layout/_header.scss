@@ -1,9 +1,9 @@
 @use "../base/color";
 
-// .logo a img {
-//     margin: 10px 0px 6px 10px;
-//     width: 2.5rem;
-// }
+.logo a img {
+    margin: 10px 0px 6px 10px;
+    width: 1.75rem;
+}
 
 
 /**************  4.BURGER MENU ****************/
@@ -149,7 +149,7 @@
       width: 100vw;
       height: auto;
       display: block;
-      top: 30px;
+      top: 25px;
     }
   
   
@@ -158,6 +158,8 @@
     display: flex;
     justify-content: center;
     color: color.$blue;
+    line-height: 2rem;
+    font-size: 1em;
     }
 
     .navbar .navbarLinks.aktiv {
