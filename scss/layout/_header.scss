@@ -28,7 +28,7 @@
     height: 3px;
     border-radius: 10px;
     transition: transform 0.5s;
-    background-color: blue;
+    background-color: color.$blue;
   }
   .streg1.aktiv {
     transform: translate(0px) rotate(45deg) ;
@@ -41,7 +41,7 @@
     height: 3px;
     border-radius: 10px;
     transition: transform 0.5s;
-    background-color: blue;
+    background-color: color.$blue;
   }
   
   .streg2.aktiv {
@@ -56,7 +56,7 @@
     height: 3px;
     border-radius: 10px;
     transition: transform 0.5s;
-    background-color: blue;
+    background-color: color.$blue;
   }
   .streg3.aktiv {
     transform: translate(0px) rotate(-45deg) ;
@@ -79,7 +79,7 @@
     height: auto;
     // fjern det z-index tak
     z-index: 1;
-    background-color: #F3F2EE;
+    background-color: color.$offwhite;
   }
   
   .navbar ul {
@@ -102,7 +102,7 @@
   
   .navbar .navbarLinks.aktiv {
     display: block;
-    background-color: blue;
+    background-color: color.$blue;
   }
   
   .navbar .navbarLinks li {
@@ -115,7 +115,7 @@
   
   .navbar .navbarLinks li a {
     text-decoration: none;
-    color: #F3F2EE;
+    color: color.$offwhite;
     font-size: 1.5em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 7rem;
@@ -155,7 +155,7 @@
     text-decoration: none;
     display: flex;
     justify-content: center;
-    color: blue;
+    color: color.$blue;
     line-height: 0rem;
     }
 
