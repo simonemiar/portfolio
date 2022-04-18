@@ -2,6 +2,8 @@
 
 h1{
     color: color.$blue;
+    font-size: calc(1rem + (32 - 2.5) * ((100vw - 300px) / (1600 - 300)));
+    text-align: center;
 }
 
 h2 {
