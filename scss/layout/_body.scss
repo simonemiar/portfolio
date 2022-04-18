@@ -1,5 +1,9 @@
 @use "../base/color";
 
 body{
-    background-color: color.$header-color;
+    background-color: color.$offwhite;
+}
+
+hr{
+    color: color.$blue;
 }

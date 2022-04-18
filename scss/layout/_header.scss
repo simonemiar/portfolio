@@ -143,10 +143,11 @@
     }
   
     .navbar .navbarLinks {
-      position: static;
+    //   position: static;
       width: 100vw;
       height: auto;
       display: block;
+      top: 30px;
     }
   
   

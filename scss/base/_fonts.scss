@@ -1,0 +1,22 @@
+@use "../base/color";
+
+h1{
+    color: color.$blue;
+}
+
+h2 {
+    color: color.$blue;
+}
+
+h3 {
+    color: color.$blue;
+}
+
+h4 {
+    color: color.$blue;
+}
+
+p{
+    color: color.$black;
+}
+
