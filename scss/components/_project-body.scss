@@ -42,7 +42,7 @@
     display: grid;
     margin: 15px;
 
-    .process_text {
+    #process_text {
         display: grid;
         grid-template-columns: auto 1fr;
         grid-template-rows: auto 1fr;
@@ -54,7 +54,7 @@
         transform: rotate(90deg);
         font-variant-numeric: tabular-nums;
       }
-      .process_text::after {
+      #process_text::after {
         content: "";
         width: 2px;
         background: color.$blue;
