@@ -1,168 +1,93 @@
 @use "../base/color";
 
 .logo a img {
-    margin: 10px 0px 6px 10px;
+    margin: 10px 0px 6px 0px;
     width: 3rem;
+    z-index: 1;
 }
 
+.navbar {
+  display: flex;
+  height: 8vh;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  padding: 3rem;
+  z-index: 1000;
+  position: relative;
+}
 
-/**************  4.BURGER MENU ****************/
+.nav-links {
+  display: flex;
+  // width: 40%;
+  justify-content: end;
+  gap: 4rem;
+}
 
-.burgerButton {
-    position: absolute;
-    top: 0.75rem;
-    right: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 1.8rem;
-    height: 1.8rem;
-    cursor: pointer;
-    z-index: 100;
-  }
-  
-  .streg1 {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-0.5rem);
-    width: 100%;
-    height: 2px;
-    border-radius: 10px;
-    transition: transform 0.5s;
-    background-color: color.$blue;
-  }
-  .streg1.aktiv {
-    transform: translate(0px) rotate(45deg) ;
-  }
-  
-  .streg2 {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    height: 2px;
-    border-radius: 10px;
-    transition: transform 0.5s;
-    background-color: color.$blue;
-  }
-  
-  .streg2.aktiv {
-    opacity: 0;
-  }
-  
-  .streg3 {
-    position: absolute;
-    top: 50%;
-    transform: translateY(0.5rem);
-    width: 100%;
-    height: 2px;
-    border-radius: 10px;
-    transition: transform 0.5s;
-    background-color: color.$blue;
-  }
-  .streg3.aktiv {
-    transform: translate(0px) rotate(-45deg) ;
+.nav-links li a {
+  color: color.$blue;
+}
 
-  }
-  /************** BURGER MENU ****************/
-  /************** 5.NAVBAR ****************/
-  
-  navbar ul li img {
-    visibility: hidden;
-    width: 0%;
-  }
-  
-  .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin: 0;
-    width: 100vw;
-    height: auto;
-    // fjern det z-index tak
-    z-index: 1;
-    background-color: color.$offwhite;
-    border-bottom: 1px solid color.$blue;
-    
+.burger_container{
+  display: block;
+  position: absolute;
+  right: 30px;
+}
 
-  }
-  
-  .navbar ul {
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-    flex-direction: column;
-    align-items: center;
-  
-  }
-  
-  .navbar .navbarLinks {
-    position: fixed;
-    // top: 55px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
-  }
-  
-  .navbar .navbarLinks.aktiv {
+.burger {
+  display: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.line {
+  height: 2.5px;
+  width: 35px;
+  margin: 0.5rem 0;
+  background: color.$blue;
+  transition: transform 0.75s ease, opacity 0.75s ease;
+}
+
+.navbar.show .line1 {
+  transform: translate(-10px) rotate(45deg) translate(15px);
+}
+.navbar.show .line2 {
+  opacity: 0;
+}
+.navbar.show .line3 {
+  transform: translate(-10px) rotate(-45deg) translate(15px);
+}
+.navbar.show .nav-links {
+  left: 0%;
+  background-color: color.$offwhite;
+}
+
+@media screen and (max-width: 700px) {
+  .burger {
     display: block;
-    background-color: color.$blue;
   }
-  
-  .navbar .navbarLinks li {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 5rem;
-    align-items: center;
-  }
-  
-  .navbar .navbarLinks li a {
-    text-decoration: none;
-    color: color.$offwhite;
-    font-size: 1.5em;
-    font-family: "Arame sans serif";
-    line-height: 7rem;
-    letter-spacing: 0.3rem;
-  }
-  
-  
-  /************** NAVBAR END ****************/
-  @media (min-width: 768px) {
-    /************** DESKTOP ****************/
-    .navbar{
-      position: static;
-    }
-    
-    .navbar ul {
-      flex-direction: row;
-      height: 0vh;
-    }
-  
-    .burgerButton {
-      display: none;
-    }
-  
-    .navbar .navbarLinks {
-    //   position: static;
-      width: 100vw;
-      height: auto;
-      display: block;
-      top: 25px;
-    }
-  
-  
-    .navbar .navbarLinks li a {
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    color: color.$blue;
-    line-height: 2rem;
-    font-size: 1em;
-    }
 
-    .navbar .navbarLinks.aktiv {
-    text-decoration: none;
-    }
+  .navbar {
+    padding: 3rem 3rem 3rem 2rem;
   }
+
+  .logo {
+    padding: 0;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 8vh;
+    left: 100%;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: color.$offwhite;
+    transition: all 1s ease;
+    top: 0;
+    padding-top: 7rem;
+    gap: 5rem;
+  }
+}

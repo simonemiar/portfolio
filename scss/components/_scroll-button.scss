@@ -4,12 +4,14 @@
     style: block;
   }
   #mouse-scroll {
-    position: fixed;
+    // position: fixed;
     margin: auto;
     left: 50%;
     bottom: 80px;
     transform: translateX(-50%);
     z-index: 9999;
+    
+    scroll-behavior: smooth;
   }
   #mouse-scroll span{
     display: block;
@@ -26,7 +28,6 @@
   #mouse-scroll .mouse {
     height: 21px;
     width: 14px;
-    border-radius: 10px;
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
@@ -113,3 +114,4 @@
     }
   }
   
+

@@ -11,14 +11,11 @@ hr{
     height: 2px;
 }
 
-// needs to be removed!
-#spacer {
-    margin-top: 5rem;
-}
 
 .index_text{
     display: grid;
     justify-items: center;
+    height: 100vh;
 
     .custom-btn {
         btn{
@@ -37,8 +34,7 @@ hr{
         visibility: visible;
     }
 
-    #spacer {
-        margin-top: 20rem;
+    main {
         max-width: 1000px;
         margin: 0 auto;
     }
