@@ -1,10 +1,6 @@
 "use strict"
 
 console.log("hellow animation");
-window.onload = function(){
-    //hide the preloader
-    document.querySelector(".preloader").style.display = "none";
-}
 
 // Loading page animation
 gsap.to('.layer-1', {y: '-100vh', delay: .5});
