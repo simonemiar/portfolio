@@ -25,7 +25,7 @@
 // }
 
 .image_section {
-  margin: 15px 15px 0px 15px;
+  
   img {
     width: 100%;
     // filter: sepia(100%) hue-rotate(190deg) saturate(500%);
@@ -39,7 +39,6 @@
 
 .first_section {
   display: block;
-  margin: 0px 15px 15px 15px;
   column-gap: 0.5em;
 
   button {
@@ -52,18 +51,8 @@
 
 
 
-
-
-.second_section {
-  margin: 15px;
-
-}
-
-
-
 .process_container {
     display: grid;
-    margin: 15px;
 
     #process_text {
         display: grid;

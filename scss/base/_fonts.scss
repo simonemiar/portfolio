@@ -1,35 +1,7 @@
 @use "../base/color";
 @import url("https://use.typekit.net/fed6jan.css");
+// what is this george?
 
-%headline-one {
-    color: color.$blue;
-    font-size: calc(1rem + (32 - 2.5) * ((100vw - 300px) / (1600 - 300)));
-    text-align: center;
-    font-weight: 800;
-    letter-spacing: 0.1rem;
-    font-family: "Arame sans serif";
-}
-
-h2 {
-    color: color.$blue;
-    font-family: "Arame sans serif";
-    letter-spacing: 0.3rem;
-}
-
-h3 {
-    color: color.$blue;
-    font-family: "Arame sans serif";
-    letter-spacing: 0.3rem;
-}
-
-h4 {
-    color: color.$blue;
-    font-family: "Arame sans serif";
-}
-
-p{
-    color: color.$black;
-}
 
 @font-face {
     font-family: "Arame sans serif";
@@ -40,27 +12,81 @@ p{
     margin: 10px 0px 6px 10px;
     width: 2.5rem;
     font-size: 1.5rem;
-    font-family: "Arame sans serif";
+}
+
+%body-text-font {
+  font-family: monospace;
+  font-weight: 300;
+  color: color.$black;
+  max-width: 60ch;
+}
+
+%headline-font {
+    font-family: "Arame sans serif";  
+    font-weight: 1000;
+    font-size: calc(1rem + (50 - 2.5) * ((100vw - 300px) / (1600 - 300)));
+    letter-spacing: 3px;
+    padding-bottom: 1rem;
+    color: color.$blue;
+}
+
+%headline2-font {
+    font-family: "Arame sans serif";  
+    font-weight: 600;
+    font-size: calc(2rem + (18 - 2) * ((100vw - 300px) / (1600 - 300)));
+    letter-spacing: 3px;
+    color: color.$blue;
+}
+
+%headline3-font {
+    font-family: "Arame sans serif";  
+    font-size: calc(1.5rem + (18 - 1) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 550;
+    color: color.$blue;
+}
+
+%headline4-font {
+    font-family: "Arame sans serif";  
+    font-weight: 300;
+    font-size: calc(0.5rem + (18 - 0.5) * ((100vw - 300px) / (1600 - 300)));
+    text-transform: uppercase;
+    color: color.$blue;
+}
+
+%headline5-font {
+    font-family: "Arame sans serif";  
+    font-size: calc(0.7rem + (18 - 0.8) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 300;
+    color: color.$blue;
 }
 
 
+a {
+  @extend %body-text-font;
+  color: color.$blue;
+}
+
+p,
+details {
+  @extend %body-text-font;
+}
+
 h1 {
-    @extend %headline-one;
-  }
-  
-//   h2 {
-//     @extend %headline-two;
-//   }
-  
-//   h3 {
-//     @extend %headline-tree;
-//   }
-  
-//   h4 {
-//     @extend %headline-four;
-//   }
-  
-//   h5 {
-//     @extend %headline-five;
-//   }
-  
+  @extend %headline-font;
+}
+
+h2 {
+  @extend %headline2-font;
+}
+
+h3 {
+  @extend %headline3-font;
+}
+
+h4 {
+  @extend %headline4-font;
+}
+
+h5 {
+  @extend %headline5-font;
+}
