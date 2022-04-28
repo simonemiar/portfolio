@@ -6,7 +6,10 @@ html {
 }
 
 .index_text {
-    height: 100vh;
+    height: 40vh;
+    // height: 60%;
+    width: 60%;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,7 +42,9 @@ html {
       span {
         display: inline-block;
         font-family: 'Montserrat', sans-serif;
-        font-size: 10vw;
+        font-size: calc(2.6rem + (80 - 2.5) * ((100vw - 300px) / (1600 - 300)));
+        // font-size: 10vw;
+        font-weight: 800;
         text-transform: uppercase;
         line-height: .8;
         transition: ease-out .6s;
@@ -47,21 +52,19 @@ html {
   }
   
       
-      
+.index_cta{
+    margin: 0 auto;
+    text-align: center;
+    color: blue;
+    height: 30vh;
+
+    .learn_more {
+        padding: 15px 0px
+    }
+
+}
 
 
-// .index_text{
-//     display: grid;
-//     justify-items: center;
-//     height: 75vh;
-
-//     .custom-btn {
-//         btn{
-//             width: 50%;
-
-//         }
-//     }
-// }
 
 .about_container{
 
@@ -82,6 +85,11 @@ html {
         }
         
     }
+    div.about.image{
+        img{
+            width: 100%;
+        }
+    }   
 }
 
 .fact_container{
@@ -96,47 +104,42 @@ html {
 
 
 @media (min-width: 678px){
-    .about_container{
-        display: flex;
+
+    .index_text {
+        height: 60vh;
+    }
+
+    .about_section{
+
+        .about_container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        
+            .about {
+                max-width: 60ch;
     
-        .about {
-            width: 50%;
-    
-            h2{
-                margin: 10px 0px;
             }
     
-        }
-    
-        
-    
+            div.about.image{
+                grid-column: 2;
+                grid-row: 1/ span 2;
+                
+            }
+
+            div.about.technologies{
+                grid-column: 1;
+                grid-row: 2;
+            }
+
     }
+    
+}
 
 
     .fact_container{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-
-        .fun{
-            width: 100%;
-        }
-
-        .fact_2{
-            grid-row: 2;
-            grid-column: 2;
-        }
-
-        .fact_3{
-            grid-row: 3;
-            grid-column: 3;
-        }
-
-
-
-        // img{
-        //     width: 40%;
-        // }
+        
 
         
     }

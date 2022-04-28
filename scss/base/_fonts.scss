@@ -15,7 +15,7 @@
 }
 
 %body-text-font {
-  font-family: monospace;
+  font-family: 'Montserrat', sans-serif;;
   font-weight: 300;
   color: color.$black;
   max-width: 60ch;
@@ -23,7 +23,7 @@
 
 %headline-font {
     font-family: sans-serif;
-    font-weight: 700;
+    font-weight: 900;
     font-size: calc(1rem + (50 - 2.5) * ((100vw - 300px) / (1600 - 300)));
     letter-spacing: 3px;
     padding-bottom: 1rem;
@@ -31,22 +31,23 @@
 }
 
 %headline2-font {
-    font-family: "Arame sans serif";  
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: calc(2rem + (18 - 2) * ((100vw - 300px) / (1600 - 300)));
     letter-spacing: 3px;
+    padding: 15px 0px;
     color: color.$blue;
 }
 
 %headline3-font {
-    font-family: "Arame sans serif";  
+    font-family: 'Montserrat', sans-serif; 
     font-size: calc(1.5rem + (18 - 1) * ((100vw - 300px) / (1600 - 300)));
     font-weight: 550;
     color: color.$blue;
 }
 
 %headline4-font {
-    font-family: "Arame sans serif";  
+    font-family: 'Montserrat', sans-serif; 
     font-weight: 300;
     font-size: calc(0.5rem + (18 - 0.5) * ((100vw - 300px) / (1600 - 300)));
     text-transform: uppercase;
@@ -54,7 +55,7 @@
 }
 
 %headline5-font {
-    font-family: "Arame sans serif";  
+    font-family: 'Montserrat', sans-serif; 
     font-size: calc(0.7rem + (18 - 0.8) * ((100vw - 300px) / (1600 - 300)));
     font-weight: 300;
     color: color.$blue;

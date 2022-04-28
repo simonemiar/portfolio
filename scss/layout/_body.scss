@@ -1,7 +1,7 @@
 @use "../base/color";
 
 main{
-    margin: 15px;
+    padding: 15px;
 
     a{
         display: grid;
@@ -13,6 +13,7 @@ body{
     background-color: color.$offwhite;
 }
 
+
 hr{
     margin: 10px 0px;
     background-color: color.$blue;
@@ -23,6 +24,8 @@ hr{
 .github-corner{
     visibility: hidden;
 }
+
+
 
 @media (min-width: 768px) {
     .github-corner{
