@@ -1,5 +1,12 @@
 @use "../base/color";
 
+.learn_more{
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 5px;
+    color: blue;
+}
+
 #mouse-scroll {
     style: block;
   }
@@ -10,7 +17,7 @@
     bottom: 80px;
     transform: translateX(-50%);
     z-index: 9999;
-    
+
     scroll-behavior: smooth;
   }
   #mouse-scroll span{
