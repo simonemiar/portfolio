@@ -3,9 +3,9 @@
 console.log("hellow animation");
 
 // Loading page animation
-gsap.to('.layer-1', {y: '-100vh', delay: .1});
-gsap.to('.layer-2', {y: '-100vh', delay: .3});
-gsap.to('.layer-3', {y: '-100vh', delay: .5});
+gsap.to('.layer-1', {y: '-100vh', delay: .4});
+// gsap.to('.layer-2', {y: '-100vh', delay: .3});
+// gsap.to('.layer-3', {y: '-100vh', delay: .5});
 gsap.to('.overlay', {y: '-100vh', delay: 1});
 
 // font page animation - first section 

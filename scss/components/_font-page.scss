@@ -7,7 +7,6 @@ html {
 
 .index_text {
     height: 40vh;
-    // height: 60%;
     width: 60%;
     margin: 0 auto;
     display: flex;
@@ -42,7 +41,8 @@ html {
       span {
         display: inline-block;
         font-family: 'Montserrat', sans-serif;
-        font-size: calc(2.6rem + (80 - 2.5) * ((100vw - 300px) / (1600 - 300)));
+        
+        font-size: calc(2.6rem + (80 - 2.5) * ((100vw - 350px) / (1600 - 300)));
         // font-size: 10vw;
         font-weight: 800;
         text-transform: uppercase;
@@ -59,7 +59,9 @@ html {
     height: 30vh;
 
     .learn_more {
+        margin: 0 auto;
         padding: 15px 0px
+
     }
 
 }
@@ -100,6 +102,18 @@ html {
     
 }
 
+.last_section{
+    display: block;
+    padding: 20px 0px;
+    text-align: center;
+
+    .custom-btn{
+        width: 300px;
+        height: 100px;
+    }
+
+}
+
 
 
 
@@ -107,6 +121,7 @@ html {
 
     .index_text {
         height: 60vh;
+        padding-top: 140px;
     }
 
     .about_section{
