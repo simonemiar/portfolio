@@ -2,15 +2,16 @@
 
 .logo a img {
     margin: 10px 0px 6px 0px;
-    width: 3rem;
-    z-index: -1;
+    width: 2.6rem;
+    z-index: 10;
+    position: relative;
 }
 
 .navbar {
   display: flex;
   height: 8vh;
   align-items: center;
-  font-size: 2.2rem;
+  font-size: 1.9rem;
   padding: 3rem;
   z-index: 1000;
   position: relative;
@@ -73,6 +74,9 @@
 
   .logo {
     padding: 0;
+    a img {
+      width: 2rem;
+    }
   }
 
   .nav-links {
@@ -91,3 +95,30 @@
     gap: 5rem;
   }
 }
+
+
+// underline animation 
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: color.$blue;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: color.$blue;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
