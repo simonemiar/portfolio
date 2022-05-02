@@ -2,11 +2,14 @@
 
 console.log("hellow animation");
 
-// Loading page animation
-// gsap.to('.layer-1', {y: '-100vh', delay: .4});
-// gsap.to('.layer-2', {y: '-100vh', delay: .3});
-// gsap.to('.layer-3', {y: '-100vh', delay: .5});
-// gsap.to('.overlay', {y: '-100vh', delay: 1});
+// PRELOADER
+let loader = document.querySelector("#preloader");
+
+window.addEventListener("load", function(){
+  loader.style.display = "none";
+})
+
+
 
 // font page animation - first section 
 window.addEventListener('mousemove', handleMouseMove);
@@ -35,10 +38,9 @@ function handleWindowResize() {
 // BackToTop animated button
 
 
-let image = document.querySelector(".image_section");
+// let image = document.querySelector(".image_section");
 
-gsap.from("main", {opacity: 0, stagger: 2, duration: 2, y: -50})
-
+//reverse not working
 // document.querySelector("#cta").addEventListener('click',  () => {
 //     h1.reversed() ? h1.play () : h1.reverse();
 // })
