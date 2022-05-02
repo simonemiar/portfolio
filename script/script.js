@@ -26,6 +26,18 @@ function setup() {
 }
 
 
+
+// function loadProject(){
+//     history.pushState({}, "", "/project");
+//     document.querySelector("contact").innerHTML;
+// }
+
+// function loadContact(){
+//     history.pushState({}, "", "/contact");
+//     document.querySelector("contact").innerHTML;
+// }
+
+
 // const paras = document.querySelectorAll('section');
 
 // const observer = new IntersectionObserver(entries =>{
@@ -40,3 +52,20 @@ function setup() {
 // paras.forEach( card =>{
 //     observer.observe(john[0])
 // })
+
+
+// so it do not reloader the whole page
+
+// function process (response, urlPath){
+//     document.querySelector("http://localhost:3000/").innerHTML = project.html;
+//     document.title = response.pageTitle;
+//     window.history.pushState({"html": response.html,"pageTitle":response.pageTitle},"",urlPath);
+// }
+
+// window.onpopstate = function(e){
+//     if(e.state){
+//         document.querySelector("http://localhost:3000/").innerHTML = e.state.html;
+//         document.title = e.state.pageTitle;
+//     }
+// }
+

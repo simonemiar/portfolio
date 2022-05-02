@@ -67,10 +67,17 @@
 }
 
 
-// a {
-//   @extend %body-text-font;
-//   color: color.$blue;
-// }
+.strong{
+  color: color.$blue;
+  font-weight: 500;
+}
+
+
+last_section{
+  .big_button_text{
+  font-size: 2rem;
+}
+}
 
 
 a {
