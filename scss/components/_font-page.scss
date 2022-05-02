@@ -57,7 +57,6 @@ html {
     text-align: center;
     color: blue;
     height: 30vh;
-    padding: 25px 0px;
 
     .learn_more {
         margin: 0 auto;
@@ -75,7 +74,6 @@ html {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         filter: grayscale(100%);
-        // filter: sepia(100%) hue-rotate(190deg) saturate(500%);
 
         img{
             width: 50px;
@@ -91,6 +89,8 @@ html {
     div.about.image{
         img{
             width: 100%;
+            filter: sepia(100%) hue-rotate(190deg) saturate(500%);
+
         }
     }   
 }
@@ -124,6 +124,11 @@ html {
         height: 60vh;
         padding-top: 140px;
     }
+
+    .index_cta{
+        padding-top: 40px;
+    }
+
 
     .about_section{
 

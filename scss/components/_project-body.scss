@@ -1,28 +1,6 @@
 @use "../base/color";
 @use "../base/fonts";
 
-// .first_section {
-//   display: grid;
-//   grid-template-columns: 1fr 1fr;
-//   margin: 15px;
-//   column-gap: 0.5em;
-
-//   img {
-//       width: 100%;
-//       // filter: sepia(100%) hue-rotate(190deg) saturate(500%);
-//       border-radius: 100px 100px 0px 0px;
-//       grid-column: span 2;
-//       // padding-bottom: 10px
-//       border: 1px solid blue;
-      
-//   }
-
-//   button {
-//     width: 100%;
-//     margin-top: 8px;
-//   }
-
-// }
 
 .image_section {
   
@@ -48,7 +26,19 @@
 
 }
 
+.second_section{
+  .project_details{
+    display: flex;
+    gap: 20px;
 
+    
+    p{
+      padding-left: 5px;
+      border-left: solid 2px color.$blue;
+      
+    }
+  }
+}
 
 
 .process_container {
