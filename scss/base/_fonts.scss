@@ -73,13 +73,6 @@
 }
 
 
-last_section{
-  .big_button_text{
-  font-size: 2rem;
-}
-}
-
-
 a {
   @extend %a-text-font;
   color: color.$blue;
