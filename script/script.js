@@ -1,10 +1,32 @@
 "use strict";
 
-// INTERSECTION CODE 
-window.addEventListener('DOMContentLoaded', setup); 
-
 const paras = document.querySelectorAll('section');
 
+window.addEventListener("DOMContentLoaded", animation);
+
+
+function animation(){
+    setup()
+    document.querySelector("#loading_container").classList.remove("hidden");
+    document.querySelector("body").style.position = "fixed";
+    document.querySelector("body").style.overflowY = "scroll";
+    setTimeout(removeAnimation, 2000);
+    setup()
+}
+
+function removeAnimation() {
+    document.querySelector("#loading_container").style.display = "none";
+    document.querySelector("body").style.position = "static";
+    document.querySelector("body").style.overflowY = "auto";
+    console.log("it worksssss");
+    gsap.from(".header_graphics", {
+      x: 100,
+      duration: 3,
+    });
+  }
+
+
+// INTERSECTION CODE 
 function setup() {
     const options = {
         rootMargin: '0px 0px -120px 0px'

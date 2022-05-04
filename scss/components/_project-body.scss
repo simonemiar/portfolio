@@ -3,9 +3,9 @@
 
 
 
-.arrow_section{
-  display: grid;
-}
+// .arrow_section{
+//   display: grid;
+// }
 
 
 .image_section {
@@ -39,11 +39,10 @@
     display: flex;
     gap: 20px;
 
-    
     p{
       padding-left: 5px;
       border-left: solid 2px color.$blue;
-      
+      margin: 10px 0px;
     }
   }
 }
@@ -51,6 +50,7 @@
 
 .process_container {
     display: grid;
+    margin: 10px 0px;
 
     #process_text {
         display: grid;
