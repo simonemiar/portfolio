@@ -6,7 +6,7 @@ html {
 }
 
 .index_text {
-    height: 40vh;
+    height: 50vh;
     width: 60%;
     margin: 0 auto;
     display: flex;
@@ -56,7 +56,7 @@ html {
     margin: 0 auto;
     text-align: center;
     color: blue;
-    height: 30vh;
+    height: 20vh;
 
     .learn_more {
         margin: 0 auto;
@@ -67,8 +67,11 @@ html {
 }
 
 
-
+#about {
+    scroll-margin-top: 30px;
+}
 .about_container{
+    
 
     div.about.technologies .icons{
         display: grid;
@@ -187,7 +190,6 @@ html {
         .about_container{
             display: grid;
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
         
             .about {
                 max-width: 60ch;

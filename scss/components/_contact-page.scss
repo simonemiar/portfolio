@@ -1,0 +1,26 @@
+@use "../base/color";
+
+#contact_section{
+    h2, h4, p{
+        text-align: center;
+    }
+    
+    .icons{
+    display: flex;
+    width: 60%;
+    height: 60%;
+    margin: 0 auto
+    }
+
+    .icon{
+    flex-grow: 1;
+    fill: color.$blue;
+    
+    }
+
+    .icon:hover{
+        fill: color.$blue;
+        background: color.$offwhite;
+    }
+
+}

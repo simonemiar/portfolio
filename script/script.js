@@ -10,7 +10,7 @@ function animation(){
     document.querySelector("#loading_container").classList.remove("hidden");
     document.querySelector("body").style.position = "fixed";
     document.querySelector("body").style.overflowY = "scroll";
-    setTimeout(removeAnimation, 2000);
+    setTimeout(removeAnimation, 1000);
     setup()
 }
 
@@ -18,11 +18,6 @@ function removeAnimation() {
     document.querySelector("#loading_container").style.display = "none";
     document.querySelector("body").style.position = "static";
     document.querySelector("body").style.overflowY = "auto";
-    console.log("it worksssss");
-    gsap.from(".header_graphics", {
-      x: 100,
-      duration: 3,
-    });
   }
 
 

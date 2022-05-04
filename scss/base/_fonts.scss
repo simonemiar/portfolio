@@ -39,7 +39,7 @@
 %headline2-font {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: calc(2.7rem + (18 - 2) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(1.8rem + (30 - 2) * ((100vw - 300px) / (1600 - 300)));
     letter-spacing: 3px;
     padding: 15px 0px;
     color: color.$blue;
@@ -57,12 +57,13 @@
     font-size: calc(0.5rem + (18 - 0.5) * ((100vw - 300px) / (1600 - 300)));
     text-transform: uppercase;
     color: color.$blue;
+    font-weight: 500;
 }
 
 %headline5-font {
     font-family: 'Montserrat', sans-serif; 
-    font-size: calc(0.3rem + (18 - 0.8) * ((100vw - 300px) / (1600 - 300)));
-    font-weight: 300;
+    font-size: calc(0.6rem + (10 - 0.8) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 400;
     color: color.$blue;
 }
 
