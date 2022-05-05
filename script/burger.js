@@ -1,7 +1,5 @@
 "use strict";
 
-console.log("hellow burger");
-
 document.addEventListener('DOMContentLoaded', nav)
 function nav(){
     const burger = document.querySelector('.burger_container');

@@ -1,16 +1,5 @@
 "use strict"
 
-console.log("hellow animation");
-
-// PRELOADER
-let loader = document.querySelector("#preloader");
-
-window.addEventListener("load", function(){
-  loader.style.display = "none";
-})
-
-
-
 // font page animation - first section 
 window.addEventListener('mousemove', handleMouseMove);
 window.addEventListener('resize', handleWindowResize);
@@ -36,11 +25,3 @@ function handleWindowResize() {
   width = window.innerWidth;
 }
 // BackToTop animated button
-
-
-// let image = document.querySelector(".image_section");
-
-//reverse not working
-// document.querySelector("#cta").addEventListener('click',  () => {
-//     h1.reversed() ? h1.play () : h1.reverse();
-// })

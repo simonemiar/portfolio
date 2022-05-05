@@ -4,7 +4,6 @@ const paras = document.querySelectorAll('section');
 
 window.addEventListener("DOMContentLoaded", animation);
 
-
 function animation(){
     setup()
     document.querySelector("#loading_container").classList.remove("hidden");
@@ -43,6 +42,7 @@ function setup() {
 }
 
 
+// trying to work with history.pushState
 
 // function loadProject(){
 //     history.pushState({}, "", "/project");
@@ -74,14 +74,14 @@ function setup() {
 // so it do not reloader the whole page
 
 // function process (response, urlPath){
-//     document.querySelector("http://localhost:3000/").innerHTML = project.html;
+//     document.querySelector("http:").innerHTML = project.html;
 //     document.title = response.pageTitle;
 //     window.history.pushState({"html": response.html,"pageTitle":response.pageTitle},"",urlPath);
 // }
 
 // window.onpopstate = function(e){
 //     if(e.state){
-//         document.querySelector("http://localhost:3000/").innerHTML = e.state.html;
+//         document.querySelector("http:").innerHTML = e.state.html;
 //         document.title = e.state.pageTitle;
 //     }
 // }
