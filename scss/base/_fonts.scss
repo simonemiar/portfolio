@@ -1,12 +1,5 @@
 @use "../base/color";
-@import url("https://use.typekit.net/fed6jan.css");
-// what is this george?
-
-
-@font-face {
-    font-family: "Arame sans serif";
-    src: url("fonts/arame_thin-webfont.woff2") format("woff2");
-}
+// @import url("https://use.typekit.net/fed6jan.css");
 
 .logo {
     margin: 10px 0px 6px 10px;
@@ -25,6 +18,8 @@
   font-weight: 300;
   color: color.$black;
   max-width: 60ch;
+  letter-spacing: 0.4px;
+  line-height: 25px;
 }
 
 %headline-font {

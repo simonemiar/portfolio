@@ -9,7 +9,7 @@ function animation(){
     document.querySelector("#loading_container").classList.remove("hidden");
     document.querySelector("body").style.position = "fixed";
     document.querySelector("body").style.overflowY = "scroll";
-    setTimeout(removeAnimation, 1000);
+    setTimeout(removeAnimation, 500);
     setup()
 }
 
