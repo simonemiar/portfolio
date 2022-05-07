@@ -69,6 +69,7 @@ html {
 
 #about {
     scroll-margin-top: 30px;
+    margin-top: 25px;
 }
 .about_container{
     
@@ -147,13 +148,14 @@ html {
     text-align: center;
 
     .custom-btn.btn{
-        width: 300px;
+        width: 320px;
         height: 100px;
 
         a{
             span{
                 font-size: 2rem;
                 padding-top: 25px;
+                letter-spacing: 3px;
             }
         }
 
@@ -162,8 +164,9 @@ html {
 
     
     p.big_button_text{
-        font-size: 1.7rem;
+        font-size: 1.8rem;
         font-weight: 500;
+        padding-bottom: 5px;
     }
     
 
