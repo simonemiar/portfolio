@@ -2,6 +2,7 @@
 
 #contact_section {
   h2,
+  h3,
   h4,
   p {
     text-align: center;
@@ -22,5 +23,9 @@
   .icon:hover {
     fill: color.$blue;
     background: color.$offwhite;
+  }
+  .svg_styling {
+    display: block;
+    margin: auto;
   }
 }
