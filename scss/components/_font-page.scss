@@ -1,219 +1,187 @@
 @use "../base/color";
 
-
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .index_text {
-    height: 50vh;
-    width: 60%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 50vh;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    .lines {
-        width: 100vw;
-      }
-      .left, .right {
-        width: 50vw;
-        overflow: hidden;
-        display: inline-block;
-      }
-      .left {
-        color: color.$blue;
-        transform: skew(0deg, -15deg);
-      }
-      .right {
-        color: black;
-        transform: skew(0deg, 15deg);
-      }
-      .left .content {
-        width: 100vw;
-        text-align: center;
-      }
-      .right .content {
-        width: 100vw;
-        text-align: center;
-        transform: translate(-50vw);
-      }
-      span {
-        display: inline-block;
-        font-family: 'Montserrat', sans-serif;
-        
-        font-size: calc(2.6rem + (80 - 2.5) * ((100vw - 350px) / (1600 - 300)));
-        // font-size: 10vw;
-        font-weight: 700;
-        text-transform: uppercase;
-        line-height: .8;
-        transition: ease-out .6s;
-      }
+  .lines {
+    width: 100vw;
   }
-  
-      
-.index_cta{
-    margin: 0 auto;
+  .left,
+  .right {
+    width: 100vw;
+    overflow: hidden;
+    display: inline-block;
+  }
+  .left {
+    color: color.$blue;
+    transform: skew(0deg, -15deg);
+  }
+  .right {
+    color: black;
+    transform: skew(0deg, 15deg);
+  }
+  .left .content {
+    width: 100vw;
     text-align: center;
-    color: blue;
-    height: 20vh;
+  }
+  .right .content {
+    width: 100vw;
+    text-align: center;
+    transform: translate(-50vw);
+  }
+  span {
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
 
-    .learn_more {
-        margin: 0 auto;
-        padding: 15px 0px;
-
-    }
-
+    font-size: calc(2.6rem + (80 - 2.5) * ((100vw - 350px) / (1600 - 300)));
+    // font-size: 10vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 0.8;
+    transition: ease-out 0.6s;
+  }
 }
 
+.index_cta {
+  margin: 0 auto;
+  text-align: center;
+  color: blue;
+  height: 20vh;
+
+  .learn_more {
+    margin: 0 auto;
+    padding: 15px 0px;
+  }
+}
 
 #about {
-    scroll-margin-top: 30px;
-    margin-top: 40px;
+  scroll-margin-top: 30px;
+  margin-top: 40px;
 }
-.about_container{
-    
+.about_container {
+  div.about.technologies .icons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    filter: grayscale(100%);
 
-    div.about.technologies .icons{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        filter: grayscale(100%);
-
-        img{
-            width: 50px;
-            height: 50px;
-            padding: 3px;
-        }
-        svg{
-            padding: 3px;
-        }
-
-        
+    img {
+      width: 50px;
+      height: 50px;
+      padding: 3px;
     }
-    div.about.image{
-        img{
-            width: 100%;
-            filter: sepia(100%) hue-rotate(190deg) saturate(500%);
-
-        }
-    }   
+    svg {
+      padding: 3px;
+    }
+  }
+  div.about.image {
+    img {
+      width: 100%;
+      filter: sepia(100%) hue-rotate(190deg) saturate(500%);
+    }
+  }
 }
 
-@-webkit-keyframes bubbleover{
-    0%{
-        -webkit-transform: translate(0, 1em);
-        z-index: -1;
-    }
-    50%{
-        -webkit-transform: translate(0, -0.5em);
-        z-index: -1;
-    }
-    100%{
-        -webkit-transform: translate(0, 0em);
-        z-index: 1;
-    }
+@-webkit-keyframes bubbleover {
+  0% {
+    -webkit-transform: translate(0, 1em);
+    z-index: -1;
+  }
+  50% {
+    -webkit-transform: translate(0, -0.5em);
+    z-index: -1;
+  }
+  100% {
+    -webkit-transform: translate(0, 0em);
+    z-index: 1;
+  }
 }
 
-@keyframes bubbleover{
-    0%{
-        top:0;
-        -webkit-transform: translate(0, 0);
-        z-index: -1;
-    }
-    50%{
-        top:0;
-        -webkit-transform: translate(0, -12px);
-        z-index: -1;
-    }
-    100%{
-        top: 0;
-        -webkit-transform: translate(0, 6px);
-        z-index: 1;
-    }
+@keyframes bubbleover {
+  0% {
+    top: 0;
+    -webkit-transform: translate(0, 0);
+    z-index: -1;
+  }
+  50% {
+    top: 0;
+    -webkit-transform: translate(0, -12px);
+    z-index: -1;
+  }
+  100% {
+    top: 0;
+    -webkit-transform: translate(0, 6px);
+    z-index: 1;
+  }
 }
 
-
-
-.fact_container{
-    img{
-        width: 100%;
-    }
-
-    
+.fact_container {
+  img {
+    width: 100%;
+  }
 }
 
-.last_section{
-    display: block;
-    padding: 20px 0px 60px 0px;
-    text-align: center;
+.last_section {
+  display: block;
+  padding: 20px 0px 60px 0px;
+  text-align: center;
 
-    .custom-btn.btn{
-        width: 320px;
-        height: 100px;
+  .custom-btn.btn {
+    width: 320px;
+    height: 100px;
 
-        a{
-            span{
-                font-size: 2rem;
-                padding-top: 25px;
-                letter-spacing: 3px;
-            }
-        }
-
-
+    a {
+      span {
+        font-size: 2rem;
+        padding-top: 25px;
+        letter-spacing: 3px;
+      }
     }
+  }
 
-    
-    p.big_button_text{
-        font-size: 1.8rem;
-        font-weight: 500;
-        padding-bottom: 5px;
-    }
-    
-
-
+  p.big_button_text {
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding-bottom: 5px;
+  }
 }
 
+@media (min-width: 678px) {
+  .index_text {
+    height: 60vh;
+    padding-top: 140px;
+  }
 
+  .index_cta {
+    padding-top: 40px;
+  }
 
+  .about_section {
+    .about_container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
 
-@media (min-width: 678px){
+      .about {
+        max-width: 60ch;
+      }
 
-    .index_text {
-        height: 60vh;
-        padding-top: 140px;
+      div.about.image {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+      }
+
+      div.about.technologies {
+        grid-column: 1;
+        grid-row: 2;
+      }
     }
-
-    .index_cta{
-        padding-top: 40px;
-    }
-
-
-    .about_section{
-
-        .about_container{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        
-            .about {
-                max-width: 60ch;
-    
-            }
-    
-            div.about.image{
-                grid-column: 2;
-                grid-row: 1/ span 2;
-                
-            }
-
-            div.about.technologies{
-                grid-column: 1;
-                grid-row: 2;
-            }
-
-    }
-    
+  }
 }
-
-}
-
-
